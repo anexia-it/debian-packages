@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Thu, 25 Sep 2014 11:23:00 +0200
+Source: bash
+Binary: bash bash-minimal bash-static bash-builtins bash-doc bashdb
+Architecture: source all amd64
+Version: 3.2-4+anexia-shellshock0
+Distribution: unstable
+Urgency: high
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Stephan Peijnik <speijnik@anexia-it.com>
+Description: 
+ bash       - The GNU Bourne Again SHell
+ bash-builtins - Bash loadable builtins - headers & examples
+ bash-doc   - Documentation and examples for the The GNU Bourne Again SHell
+ bash-minimal - The GNU Bourne Again SHell (minimal version)
+ bash-static - The GNU Bourne Again SHell (static version)
+ bashdb     - The GNU Bourne Again SHell Debugger
+Changes: 
+ bash (3.2-4+anexia-shellshock0) unstable; urgency=high
+ .
+   * Added patch fixing CVE-2014-6271.
+Checksums-Sha1: 
+ 83d81a92c4e956ff2b63fa4cd1c5f1a82c0665d7 718 bash_3.2-4+anexia-shellshock0.dsc
+ 2e828a914cc6c6326a81255b879ebc59f6c8b592 2479497 bash_3.2-4+anexia-shellshock0.tar.gz
+ ae7a86cbb38050469e0375290b51c943fd62e945 321308 bash-doc_3.2-4+anexia-shellshock0_all.deb
+ bd8fab49db13a86ba7c1864a966d22b3100b73b4 645980 bash_3.2-4+anexia-shellshock0_amd64.deb
+ d94d49657cfb7bcc3f9268a98e6a723268395e34 102158 bash-builtins_3.2-4+anexia-shellshock0_amd64.deb
+ 3b329a6dae65bd62a2f350211941bff49eabd1f7 778624 bash-static_3.2-4+anexia-shellshock0_amd64.deb
+ 1db5a087843170eef777cc8c8b9fe25bbe8398a7 233646 bash-minimal_3.2-4+anexia-shellshock0_amd64.deb
+Checksums-Sha256: 
+ 1875234d35394ad88cb9abf333f65af9a84a7519255eb79ff034cd924ece9f0d 718 bash_3.2-4+anexia-shellshock0.dsc
+ e1498ba6cf28da9fba31ea342c21df64446db92e9186e3a18737eae0e5921acc 2479497 bash_3.2-4+anexia-shellshock0.tar.gz
+ 3d18e36d2a07974c283a4fd68c22133bb03fa89136a81b4a7ecfa279e283d43f 321308 bash-doc_3.2-4+anexia-shellshock0_all.deb
+ fbb6d339e09522591c5d4be25a0c8af00093e70ed73fe9fbc27f8a9a13cf1ab3 645980 bash_3.2-4+anexia-shellshock0_amd64.deb
+ 9f19c0ba4f4a60abab2b9f4cbb73ce8cb0654cf7390b0a9388d45e0a99f56e0c 102158 bash-builtins_3.2-4+anexia-shellshock0_amd64.deb
+ b938b2f425a0eb3af8c048e5d56fa943195523c78a0ed5a3f056d9ab80295d02 778624 bash-static_3.2-4+anexia-shellshock0_amd64.deb
+ 017758b530cc7aa249c6e18fd7b1f5105ff759fd6475f6735e3f3ae41f5e2082 233646 bash-minimal_3.2-4+anexia-shellshock0_amd64.deb
+Files: 
+ b393f397d82045863b15b394bae285fa 718 base required bash_3.2-4+anexia-shellshock0.dsc
+ e5c0556182af2a5b71c7f5f0c35f0722 2479497 base required bash_3.2-4+anexia-shellshock0.tar.gz
+ 2b50d38cb954a2df98cca7917a29ee98 321308 doc optional bash-doc_3.2-4+anexia-shellshock0_all.deb
+ bd011bce57af17ebe1311879afa6e841 645980 shells required bash_3.2-4+anexia-shellshock0_amd64.deb
+ 57bf9f9d55fa463f02e6a6d1d3c00e2e 102158 utils optional bash-builtins_3.2-4+anexia-shellshock0_amd64.deb
+ 1bdcafd365d733c8cac4105d65894671 778624 shells optional bash-static_3.2-4+anexia-shellshock0_amd64.deb
+ 2b2ecd3832f6ddc9c9ff6848a7f86eb4 233646 shells optional bash-minimal_3.2-4+anexia-shellshock0_amd64.deb
