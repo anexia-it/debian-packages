@@ -1,7 +1,7 @@
 ANEXIA Debian Packages
 ======================
 
-This repository contains custromized Debian packages built and
+This repository contains customized Debian packages built and
 used by [ANEXIA](http://www.anexia-it.com).
 
 The repository contains one directory per Debian codename at the top level,
