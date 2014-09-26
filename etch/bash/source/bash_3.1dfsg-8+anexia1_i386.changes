@@ -1,0 +1,31 @@
+Format: 1.7
+Date: Fri, 26 Sep 2014 11:31:00 +0200
+Source: bash
+Binary: bashdb bash-builtins bash bash-minimal bash-static bash-doc
+Architecture: source i386 all
+Version: 3.1dfsg-8+anexia1
+Distribution: unstable
+Urgency: high
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Stephan Peijnik <speijnik@anexia-it.com>
+Description: 
+ bash       - The GNU Bourne Again SHell
+ bash-builtins - Bash loadable builtins - headers & examples
+ bash-doc   - Documentation and examples for the The GNU Bourne Again SHell
+ bash-minimal - The GNU Bourne Again SHell (minimal version)
+ bash-static - The GNU Bourne Again SHell (static version)
+Changes: 
+ bash (3.1dfsg-8+anexia1) unstable; urgency=high
+ .
+   * Added patchset fixing CVE-2014-7169.
+   * Added intermediate patch that fixes comment so patch #1 of the
+     patchset can be applied.
+   * Changed version schema to clean variant.
+Files: 
+ 8fc37976c48a1a5a6a3e3672d2313399 443 base required bash_3.1dfsg-8+anexia1.dsc
+ 1df7a7fd212e1818a6140330006fa71f 2556725 base required bash_3.1dfsg-8+anexia1.tar.gz
+ 65deb58a47b9e98ee8aa3445bc7d9603 160364 doc optional bash-doc_3.1dfsg-8+anexia1_all.deb
+ ef2b2b15f34e9d31c13ee311fed21e84 871926 shells required bash_3.1dfsg-8+anexia1_i386.deb
+ 06f5b53bf00c74a3bc1c0d1177c67fb7 99062 utils optional bash-builtins_3.1dfsg-8+anexia1_i386.deb
+ 410a26c28e4b52bd8d309886f5447595 696470 shells optional bash-static_3.1dfsg-8+anexia1_i386.deb
+ 4937a65a02bf442f6cbd6c27768a7e5a 199254 shells optional bash-minimal_3.1dfsg-8+anexia1_i386.deb
