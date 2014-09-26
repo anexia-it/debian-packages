@@ -1,0 +1,48 @@
+Format: 1.8
+Date: Fri, 26 Sep 2014 10:14:00 +0200
+Source: bash
+Binary: bash bash-minimal bash-static bash-builtins bash-doc bashdb
+Architecture: source all amd64
+Version: 3.2-4+anexia1
+Distribution: unstable
+Urgency: high
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Stephan Peijnik <speijnik@anexia-it.com>
+Description: 
+ bash       - The GNU Bourne Again SHell
+ bash-builtins - Bash loadable builtins - headers & examples
+ bash-doc   - Documentation and examples for the The GNU Bourne Again SHell
+ bash-minimal - The GNU Bourne Again SHell (minimal version)
+ bash-static - The GNU Bourne Again SHell (static version)
+ bashdb     - The GNU Bourne Again SHell Debugger
+Changes: 
+ bash (3.2-4+anexia1) unstable; urgency=high
+ .
+   * Added patchset fixing CVE-2014-7169.
+   * Added intermediate patch that fixes comment so patch #1 of the patchset
+     can be applied.
+   * Changed version schema to clean variant.
+Checksums-Sha1: 
+ f867f93c7f3be32dbb0f0f03478dbb9f1ff1dbbc 674 bash_3.2-4+anexia1.dsc
+ a78dc7ae270a59ee79513ce3406f017047c290df 2482792 bash_3.2-4+anexia1.tar.gz
+ cd2e3b101a67b7c7640949c88bc149e2771882c5 321378 bash-doc_3.2-4+anexia1_all.deb
+ 9b7591a950dc4f34caffad6d752972b539846900 646576 bash_3.2-4+anexia1_amd64.deb
+ ba18cddf814a9fb2c39328352d65dad96f024503 102184 bash-builtins_3.2-4+anexia1_amd64.deb
+ 89563141d4661ddcb0804d40e1952aa602e851bd 778936 bash-static_3.2-4+anexia1_amd64.deb
+ 4e16e6cd6462cd10554dc527744544e3a6153621 234008 bash-minimal_3.2-4+anexia1_amd64.deb
+Checksums-Sha256: 
+ 4bfbf3e18971b13a45a3e739f3d84de339a31104ee5f05369bb366fd5a848bc9 674 bash_3.2-4+anexia1.dsc
+ 3ecd795ab3bd9b0f4a2998844c5a7eec617530c352595c1b5e849f6e10c7cfd7 2482792 bash_3.2-4+anexia1.tar.gz
+ 16628919c42f05230afe7ecec7a89d6d2888f9476ddf6c0a6350c91223518c65 321378 bash-doc_3.2-4+anexia1_all.deb
+ ca931a70d910e27cbacdf51c76a943ff811200c97aebb8be36933dba22d0c97b 646576 bash_3.2-4+anexia1_amd64.deb
+ a37915384659755f02ad541476f78ff49e905e617b203779447fae4bf4631cd8 102184 bash-builtins_3.2-4+anexia1_amd64.deb
+ b554a02b9a73e9233c182c051f0686afa5f3b9d8f1da6b29b9f8f635e4666579 778936 bash-static_3.2-4+anexia1_amd64.deb
+ 14587551eb8bdfe1703e0ba238e901838f60c9417a04a09a8e83fd15835e144b 234008 bash-minimal_3.2-4+anexia1_amd64.deb
+Files: 
+ b6f83356facdbdc9bb079a14db0336b2 674 base required bash_3.2-4+anexia1.dsc
+ f66d406b61e59ca8d1503f72919c530e 2482792 base required bash_3.2-4+anexia1.tar.gz
+ 2b3e1d27f581fb4f952e6ee0f6b00305 321378 doc optional bash-doc_3.2-4+anexia1_all.deb
+ eb99293545a536babb9cde6f904557ec 646576 shells required bash_3.2-4+anexia1_amd64.deb
+ 32a98477a1d1ef7c941759af852196b4 102184 utils optional bash-builtins_3.2-4+anexia1_amd64.deb
+ 95dbf8936bc2cab7fa41af18dd7e0771 778936 shells optional bash-static_3.2-4+anexia1_amd64.deb
+ c2efb672fab8b7051a64f78426a8ed6d 234008 shells optional bash-minimal_3.2-4+anexia1_amd64.deb
