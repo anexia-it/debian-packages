@@ -1,0 +1,62 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 02 Oct 2014 06:14:37 +0200
+Source: bash
+Binary: bash bash-minimal bash-static bash-builtins bash-doc bashdb
+Architecture: source all amd64
+Version: 3.2-4+anexia2
+Distribution: unstable
+Urgency: high
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Stephan Peijnik <speijnik@anexia-it.com>
+Description: 
+ bash       - The GNU Bourne Again SHell
+ bash-builtins - Bash loadable builtins - headers & examples
+ bash-doc   - Documentation and examples for the The GNU Bourne Again SHell
+ bash-minimal - The GNU Bourne Again SHell (minimal version)
+ bash-static - The GNU Bourne Again SHell (static version)
+ bashdb     - The GNU Bourne Again SHell Debugger
+Changes: 
+ bash (3.2-4+anexia2) unstable; urgency=high
+ .
+   * Removed shellshock* patches.
+   * Added bash32-052, bash32-053, bash32-054 and bash32-055 upstream patches.
+     These patches do fix multiple shellshock vulnerabilities.
+Checksums-Sha1: 
+ 63dc5c2fdcebd458bb8b2e53b094a3dfb8a86cd3 1212 bash_3.2-4+anexia2.dsc
+ 4b64179a1aa7729e53c734ac571203d737b21748 2483119 bash_3.2-4+anexia2.tar.gz
+ 64ec23c59aab4caa7179f40a7e42b0b2c52989a4 321444 bash-doc_3.2-4+anexia2_all.deb
+ 28c15adfd4710063b8fe9b556f669c8969a72407 646588 bash_3.2-4+anexia2_amd64.deb
+ 5fff325af0c35f685235fb74f27cbd236db1fd0a 102176 bash-builtins_3.2-4+anexia2_amd64.deb
+ 45cf2432ae4fcd13a52dc12cca13e4d818f94f13 779020 bash-static_3.2-4+anexia2_amd64.deb
+ 6bdb5b05f7e2a2ca855ebe84de62e6e25e630820 234196 bash-minimal_3.2-4+anexia2_amd64.deb
+Checksums-Sha256: 
+ b166f66acfd8338258fa7c4f545da3a3128acf68131013e18b0fa2a4ce9613ac 1212 bash_3.2-4+anexia2.dsc
+ 546c37874bbda908209d8ac023286d3afdc2f52bf89ad2ad9937108b94b25963 2483119 bash_3.2-4+anexia2.tar.gz
+ 32089f082123845c9490efddaec958040c554a94c04f50fbffbf100390588a97 321444 bash-doc_3.2-4+anexia2_all.deb
+ 8635b3d2d764a8f9be603718004b0cfd6c962dabdf260dbb444d603a0d428323 646588 bash_3.2-4+anexia2_amd64.deb
+ 530fb4b1d1ddebe0cfd09bfaf5bf73781ed5b3954ec8cf34f8af5cdfefa1b4cb 102176 bash-builtins_3.2-4+anexia2_amd64.deb
+ 7a968a7cfc766b1f048f6de3a0a2cc2d7272c0d8c9f1889ba80c4c258d30b104 779020 bash-static_3.2-4+anexia2_amd64.deb
+ a7e4670f423211fcb987a94771a8b734242a2b0b6ca7d760f7cfdfa93938c69a 234196 bash-minimal_3.2-4+anexia2_amd64.deb
+Files: 
+ a19f22f6c4e405b99792e6af1fe7b30e 1212 base required bash_3.2-4+anexia2.dsc
+ c2bd931376a5b5eddfd84536c42bda9b 2483119 base required bash_3.2-4+anexia2.tar.gz
+ 7148f4a452b44246100ce65283162e52 321444 doc optional bash-doc_3.2-4+anexia2_all.deb
+ 54e2e0aef58d8399c1c9a22973a56461 646588 shells required bash_3.2-4+anexia2_amd64.deb
+ 54046e96128bbad68ac2414aa7d5ef7d 102176 utils optional bash-builtins_3.2-4+anexia2_amd64.deb
+ 08aef039d79149de4d037c3a4698381d 779020 shells optional bash-static_3.2-4+anexia2_amd64.deb
+ e12521f25e00591950315b78050b52cc 234196 shells optional bash-minimal_3.2-4+anexia2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJULNjnAAoJEIFeFWFN+18WDbcH/3vOiOiFdTu6BfFb3uk2fNEs
+S7xylJU3CGW6r4xjIMC599Saea0YC6wa3IKI6QJaZ+RtUXBYDzBMEUO52Ztuhfuf
+6O/BvRotUwancWNzXS2h8eVjxTjnnLWYnkMdL9T14mhvDpS8CeA6PkDBnG9ziU2t
+cLzkYmEi19wZWbhcK3ifAugoiiuj2kYHIGW/Vd84BkhFKo8x+xxqTxKgFom7k9s8
+/JVFo4Lm/SSCiBimmxkSP9J7gxhyOAGSrUseU97MV2Hs2QabHnlFtvZSHTCPnHZZ
+Ln0BL1qdzbdtYZMXYXeksX3v7wdBpEwO/wgER8xU0NJYHbv2K8T7HHee6tBSnn8=
+=0jn/
+-----END PGP SIGNATURE-----
