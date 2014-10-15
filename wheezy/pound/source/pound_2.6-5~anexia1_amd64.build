@@ -1,0 +1,486 @@
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package pound
+dpkg-buildpackage: source version 2.6-5~anexia1
+dpkg-buildpackage: source changed by Stephan Peijnik <spe@anexia.at>
+ dpkg-source --before-build pound-2.6
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp 
+[ ! -f Makefile ] || /usr/bin/make clean
+rm -f config.h config.status config.log Makefile
+dh_clean 
+ dpkg-source -b pound-2.6
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building pound using existing ./pound_2.6.orig.tar.gz
+dpkg-source: info: building pound in pound_2.6-5~anexia1.debian.tar.gz
+dpkg-source: info: building pound in pound_2.6-5~anexia1.dsc
+ dpkg-genchanges -S >../pound_2.6-5~anexia1_source.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build pound-2.6
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+I: using fakeroot in build.
+I: Current time: Wed Oct 15 11:44:13 CEST 2014
+I: pbuilder-time-stamp: 1413366253
+I: Building the build Environment
+I: extracting base tarball [/var/cache/pbuilder/stable-amd64-base.tgz]
+I: creating local configuration
+I: copying local configuration
+I: mounting /proc filesystem
+I: mounting /dev/pts filesystem
+I: policy-rc.d already exists
+I: Obtaining the cached apt archive contents
+I: Installing the build-deps
+ -> Attempting to satisfy build-dependencies
+ -> Creating pbuilder-satisfydepends-dummy package
+Package: pbuilder-satisfydepends-dummy
+Version: 0.invalid.0
+Architecture: amd64
+Maintainer: Debian Pbuilder Team <pbuilder-maint@lists.alioth.debian.org>
+Description: Dummy package to satisfy dependencies with aptitude - created by pbuilder
+ This package was created automatically by pbuilder to satisfy the
+ build-dependencies of the package being currently built.
+Depends: debhelper (>= 7), libssl-dev (>= 0.9.7), autotools-dev, libpcre3-dev, openssl
+dpkg-deb: building package `pbuilder-satisfydepends-dummy' in `/tmp/satisfydepends-aptitude/pbuilder-satisfydepends-dummy.deb'.
+Selecting previously unselected package pbuilder-satisfydepends-dummy.
+(Reading database ... 11119 files and directories currently installed.)
+Unpacking pbuilder-satisfydepends-dummy (from .../pbuilder-satisfydepends-dummy.deb) ...
+dpkg: pbuilder-satisfydepends-dummy: dependency problems, but configuring anyway as you requested:
+ pbuilder-satisfydepends-dummy depends on debhelper (>= 7); however:
+  Package debhelper is not installed.
+ pbuilder-satisfydepends-dummy depends on libssl-dev (>= 0.9.7); however:
+  Package libssl-dev is not installed.
+ pbuilder-satisfydepends-dummy depends on autotools-dev; however:
+  Package autotools-dev is not installed.
+ pbuilder-satisfydepends-dummy depends on libpcre3-dev; however:
+  Package libpcre3-dev is not installed.
+ pbuilder-satisfydepends-dummy depends on openssl; however:
+  Package openssl is not installed.
+
+Setting up pbuilder-satisfydepends-dummy (0.invalid.0) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Initializing package states...
+Writing extended state information...
+The following NEW packages will be installed:
+  autotools-dev{a} bsdmainutils{a} debhelper{a} file{a} gettext{a} 
+  gettext-base{a} groff-base{a} html2text{a} intltool-debian{a} 
+  libasprintf0c2{a} libcroco3{a} libffi5{a} libgettextpo0{a} 
+  libglib2.0-0{a} libmagic1{a} libpcre3{a} libpcre3-dev{a} libpcrecpp0{a} 
+  libpipeline1{a} libssl-dev{a} libssl1.0.0{a} libunistring0{a} libxml2{a} 
+  man-db{a} openssl{a} po-debconf{a} zlib1g-dev{a} 
+0 packages upgraded, 27 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/14.1 MB of archives. After unpacking 37.7 MB will be used.
+Writing extended state information...
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpipeline1:amd64.
+(Reading database ... 11119 files and directories currently installed.)
+Unpacking libpipeline1:amd64 (from .../libpipeline1_1.2.1-1_amd64.deb) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Unpacking libssl1.0.0:amd64 (from .../libssl1.0.0_1.0.1e-2+deb7u11_amd64.deb) ...
+Selecting previously unselected package libasprintf0c2:amd64.
+Unpacking libasprintf0c2:amd64 (from .../libasprintf0c2_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package libmagic1:amd64.
+Unpacking libmagic1:amd64 (from .../libmagic1_5.11-2+deb7u3_amd64.deb) ...
+Selecting previously unselected package libpcre3:amd64.
+Unpacking libpcre3:amd64 (from .../libpcre3_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package libxml2:amd64.
+Unpacking libxml2:amd64 (from .../libxml2_2.8.0+dfsg1-7+nmu3_amd64.deb) ...
+Selecting previously unselected package libffi5:amd64.
+Unpacking libffi5:amd64 (from .../libffi5_3.0.10-3_amd64.deb) ...
+Selecting previously unselected package libglib2.0-0:amd64.
+Unpacking libglib2.0-0:amd64 (from .../libglib2.0-0_2.33.12+really2.32.4-5_amd64.deb) ...
+Selecting previously unselected package libcroco3:amd64.
+Unpacking libcroco3:amd64 (from .../libcroco3_0.6.6-2_amd64.deb) ...
+Selecting previously unselected package libunistring0:amd64.
+Unpacking libunistring0:amd64 (from .../libunistring0_0.9.3-5_amd64.deb) ...
+Selecting previously unselected package libgettextpo0:amd64.
+Unpacking libgettextpo0:amd64 (from .../libgettextpo0_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package libpcrecpp0:amd64.
+Unpacking libpcrecpp0:amd64 (from .../libpcrecpp0_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package bsdmainutils.
+Unpacking bsdmainutils (from .../bsdmainutils_9.0.3_amd64.deb) ...
+Selecting previously unselected package groff-base.
+Unpacking groff-base (from .../groff-base_1.21-9_amd64.deb) ...
+Selecting previously unselected package man-db.
+Unpacking man-db (from .../man-db_2.6.2-1_amd64.deb) ...
+Selecting previously unselected package file.
+Unpacking file (from .../file_5.11-2+deb7u3_amd64.deb) ...
+Selecting previously unselected package gettext-base.
+Unpacking gettext-base (from .../gettext-base_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package autotools-dev.
+Unpacking autotools-dev (from .../autotools-dev_20120608.1_all.deb) ...
+Selecting previously unselected package html2text.
+Unpacking html2text (from .../html2text_1.3.2a-15_amd64.deb) ...
+Selecting previously unselected package gettext.
+Unpacking gettext (from .../gettext_0.18.1.1-9_amd64.deb) ...
+Selecting previously unselected package intltool-debian.
+Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
+Selecting previously unselected package po-debconf.
+Unpacking po-debconf (from .../po-debconf_1.0.16+nmu2_all.deb) ...
+Selecting previously unselected package debhelper.
+Unpacking debhelper (from .../debhelper_9.20120909_all.deb) ...
+Selecting previously unselected package libpcre3-dev.
+Unpacking libpcre3-dev (from .../libpcre3-dev_1%3a8.30-5_amd64.deb) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Unpacking zlib1g-dev:amd64 (from .../zlib1g-dev_1%3a1.2.7.dfsg-13_amd64.deb) ...
+Selecting previously unselected package libssl-dev.
+Unpacking libssl-dev (from .../libssl-dev_1.0.1e-2+deb7u11_amd64.deb) ...
+Selecting previously unselected package openssl.
+Unpacking openssl (from .../openssl_1.0.1e-2+deb7u11_amd64.deb) ...
+Setting up libpipeline1:amd64 (1.2.1-1) ...
+Setting up libssl1.0.0:amd64 (1.0.1e-2+deb7u11) ...
+Setting up libasprintf0c2:amd64 (0.18.1.1-9) ...
+Setting up libmagic1:amd64 (5.11-2+deb7u3) ...
+Setting up libpcre3:amd64 (1:8.30-5) ...
+Setting up libxml2:amd64 (2.8.0+dfsg1-7+nmu3) ...
+Setting up libffi5:amd64 (3.0.10-3) ...
+Setting up libglib2.0-0:amd64 (2.33.12+really2.32.4-5) ...
+No schema files found: doing nothing.
+Setting up libcroco3:amd64 (0.6.6-2) ...
+Setting up libunistring0:amd64 (0.9.3-5) ...
+Setting up libgettextpo0:amd64 (0.18.1.1-9) ...
+Setting up libpcrecpp0:amd64 (1:8.30-5) ...
+Setting up bsdmainutils (9.0.3) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up groff-base (1.21-9) ...
+Setting up man-db (2.6.2-1) ...
+Building database of manual pages ...
+Setting up file (5.11-2+deb7u3) ...
+Setting up gettext-base (0.18.1.1-9) ...
+Setting up autotools-dev (20120608.1) ...
+Setting up html2text (1.3.2a-15) ...
+Setting up gettext (0.18.1.1-9) ...
+Setting up intltool-debian (0.35.0+20060710.1) ...
+Setting up po-debconf (1.0.16+nmu2) ...
+Setting up debhelper (9.20120909) ...
+Setting up libpcre3-dev (1:8.30-5) ...
+Setting up zlib1g-dev:amd64 (1:1.2.7.dfsg-13) ...
+Setting up libssl-dev (1.0.1e-2+deb7u11) ...
+Setting up openssl (1.0.1e-2+deb7u11) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Reading extended state information...
+Initializing package states...
+Writing extended state information...
+ -> Finished parsing the build-deps
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  fakeroot
+debconf: delaying package configuration, since apt-utils is not installed
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/109 kB of archives.
+After this operation, 325 kB of additional disk space will be used.
+Selecting previously unselected package fakeroot.
+(Reading database ... 12852 files and directories currently installed.)
+Unpacking fakeroot (from .../fakeroot_1.18.4-2_amd64.deb) ...
+Processing triggers for man-db ...
+Setting up fakeroot (1.18.4-2) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+I: Copying back the cached apt archive contents
+I: Copying source file
+I: copying [../pound_2.6-5~anexia1.dsc]
+I: copying [../pound_2.6.orig.tar.gz]
+I: copying [../pound_2.6-5~anexia1.debian.tar.gz]
+I: Extracting source
+dpkg-source: warning: extracting unsigned source package (pound_2.6-5~anexia1.dsc)
+dpkg-source: info: extracting pound in pound-2.6
+dpkg-source: info: unpacking pound_2.6.orig.tar.gz
+dpkg-source: info: unpacking pound_2.6-5~anexia1.debian.tar.gz
+dpkg-source: info: applying 0001-anti_beast.patch
+dpkg-source: info: applying 0002-xss_redirect_fix.patch
+dpkg-source: info: applying 0003-tls_compression_disable.patch
+dpkg-source: info: applying 0004-add_http_patch_support.patch
+dpkg-source: info: applying 0005-wait_on_semaphore_fix.patch
+dpkg-source: info: applying 0006-disable_sslv3.patch
+I: Building the package
+I: Running cd tmp/buildd/*/ && env PATH="/usr/sbin:/usr/bin:/sbin:/bin" dpkg-buildpackage -us -uc  -rfakeroot
+dpkg-buildpackage: source package pound
+dpkg-buildpackage: source version 2.6-5~anexia1
+dpkg-buildpackage: source changed by Stephan Peijnik <spe@anexia.at>
+ dpkg-source --before-build pound-2.6
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp 
+[ ! -f Makefile ] || /usr/bin/make clean
+rm -f config.h config.status config.log Makefile
+dh_clean 
+ dpkg-source -b pound-2.6
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building pound using existing ./pound_2.6.orig.tar.gz
+dpkg-source: info: building pound in pound_2.6-5~anexia1.debian.tar.gz
+dpkg-source: info: building pound in pound_2.6-5~anexia1.dsc
+ debian/rules build
+dh_testdir
+mv config.sub config.sub.upstream && ln -s /usr/share/misc/config.sub
+mv config.guess config.guess.upstream && ln -s /usr/share/misc/config.guess
+./configure CFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" CPPFLAGS="-D_FORTIFY_SOURCE=2" CXXFLAGS="-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security" FFLAGS="-g -O2" LDFLAGS="-Wl,-z,relro"  --prefix=/usr --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc/pound
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+configure: *** Checking for threads library and/or flags ***
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for cc_r... gcc
+configure: *** Parsing options ***
+configure: *** Checking for libraries ***
+checking for dlopen in -ldl... yes
+checking for socket in -lsocket... no
+checking for hstrerror in -lresolv... yes
+checking for BIO_new in -lcrypto... yes
+checking for SSL_CTX_new in -lssl... yes
+checking for regcomp in -lpcreposix... yes
+checking for malloc in -ltcmalloc... no
+checking for pthread_attr_setstacksize in LIBS=-lpcreposix -lssl -lcrypto -lresolv -ldl   -lm with CFLAGS=-g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -DUPER... OK
+configure: *** Checking for header files ***
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netinet/tcp.h usability... yes
+checking netinet/tcp.h presence... yes
+checking for netinet/tcp.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking openssl/engine.h usability... yes
+checking openssl/engine.h presence... yes
+checking for openssl/engine.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking wait.h usability... yes
+checking wait.h presence... yes
+checking for wait.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for sys/stat.h... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking pcreposix.h usability... yes
+checking pcreposix.h presence... yes
+checking for pcreposix.h... yes
+checking pcre/pcreposix.h usability... no
+checking pcre/pcreposix.h presence... no
+checking for pcre/pcreposix.h... no
+checking fnmatch.h usability... yes
+checking fnmatch.h presence... yes
+checking for fnmatch.h... yes
+configure: *** Checking for additonal information ***
+checking for facilitynames presence... yes
+checking return type of signal handlers... void
+checking for an ANSI C-conforming const... yes
+checking for uid_t in sys/types.h... yes
+checking for pid_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for long long int... yes
+checking for in_addr_t... yes
+checking for in_port_t... yes
+checking for time_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for working memcmp... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... (cached) yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking return type of signal handlers... (cached) void
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for strftime... yes
+checking for getaddrinfo... yes
+checking for inet_ntop... yes
+checking for memset... yes
+checking for regcomp... yes
+checking for poll... yes
+checking for socket... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strspn... yes
+checking for strtol... yes
+checking for setsid... yes
+checking for X509_STORE_set_flags... yes
+checking for localtime_r... yes
+checking for gettimeofday... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating config.h
+rm config.sub && mv config.sub.upstream config.sub
+rm config.guess && mv config.guess.upstream config.guess
+dh_testdir
+/usr/bin/make
+make[1]: Entering directory `/tmp/buildd/pound-2.6'
+gcc -DF_CONF=\"/etc/pound/pound.cfg\" -DVERSION=\""2.6"\" -DC_SSL=\"""\" -DC_T_RSA=\""0"\" -DC_MAXBUF=\""0"\" -DC_OWNER=\"""\" -DC_GROUP=\"""\" -DC_SUPER=\""0"\" -DC_CERT1L=\"""\" -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -DUPER -DNEED_STACK -DHAVE_SYSLOG_H=1 -pthread -D_FORTIFY_SOURCE=2 -D_REENTRANT -D_THREAD_SAFE -Wstrict-prototypes -Wno-unused-result -pipe   -c -o pound.o pound.c
+gcc -DF_CONF=\"/etc/pound/pound.cfg\" -DVERSION=\""2.6"\" -DC_SSL=\"""\" -DC_T_RSA=\""0"\" -DC_MAXBUF=\""0"\" -DC_OWNER=\"""\" -DC_GROUP=\"""\" -DC_SUPER=\""0"\" -DC_CERT1L=\"""\" -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -DUPER -DNEED_STACK -DHAVE_SYSLOG_H=1 -pthread -D_FORTIFY_SOURCE=2 -D_REENTRANT -D_THREAD_SAFE -Wstrict-prototypes -Wno-unused-result -pipe   -c -o http.o http.c
+http.c: In function 'do_http':
+http.c:984:24: warning: assignment discards 'const' qualifier from pointer target type [enabled by default]
+gcc -DF_CONF=\"/etc/pound/pound.cfg\" -DVERSION=\""2.6"\" -DC_SSL=\"""\" -DC_T_RSA=\""0"\" -DC_MAXBUF=\""0"\" -DC_OWNER=\"""\" -DC_GROUP=\"""\" -DC_SUPER=\""0"\" -DC_CERT1L=\"""\" -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -DUPER -DNEED_STACK -DHAVE_SYSLOG_H=1 -pthread -D_FORTIFY_SOURCE=2 -D_REENTRANT -D_THREAD_SAFE -Wstrict-prototypes -Wno-unused-result -pipe   -c -o config.o config.c
+openssl dhparam -5 -C -noout 512 > dh512.h
+Generating DH parameters, 512 bit long safe prime, generator 5
+This is going to take a long time
+..................................................................+....+..+..........+..........................+.................+........................+..................+..+..........................+........................+..+..+..+...+.................................+..........................+.+.+..........................+........+...............................+......................................................+.........................+.......+.+..+.............+........+............................................+.....................+...................+....................+............+.....................+...+....................+............................................+............+.......................................+...............+...+..........+...+...+................+.........................+......+........................+........+...+.+.......+..............+................+................+...+..........+.............+.....................+...............................................+.....................+.....+......+........................+.............................+....................+.........................................+.........+.....................+...............+..........................+.................++*++*++*++*++*++*
+openssl dhparam -5 -C -noout 1024 > dh1024.h
+Generating DH parameters, 1024 bit long safe prime, generator 5
+This is going to take a long time
+........+.+.................+.................................................+......................+...............+...................................................................................................................................................+...................+........+...................................+............................................................................................+.......+.......................+.....+...+..+..........+...........+...............................................+................+.............................+..........................................................................+.........................................................................................+..........................................+....................................................+...................+..............+...........................................+...........................+......................................+....+....................+...................................................+...................................+..............................................................+........................+.............+....................................................................................................................................+................+.................+.................................................................................................................................................................+...............................................................................................................+..........................................................................+................................+.+........+...........................+...............+...........................................................................................................+..+.......+..........................................................................................................+...........................................................................................................+.....................................................................................................................................+............................................................+...............................................................................+......+.+.......................+......................................................................+......+................................................................................................................+.......................+...............+............................................................+...................................+.....+..........+.+............................................................+................+............................................+...............+.+......................................................................+....+....+.........+..............+...+..............................................................................................................................................................................................................+.............................................+...................................................................+............+....................+...................++*++*++*
+gcc -DF_CONF=\"/etc/pound/pound.cfg\" -DVERSION=\""2.6"\" -DC_SSL=\"""\" -DC_T_RSA=\""0"\" -DC_MAXBUF=\""0"\" -DC_OWNER=\"""\" -DC_GROUP=\"""\" -DC_SUPER=\""0"\" -DC_CERT1L=\"""\" -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -DUPER -DNEED_STACK -DHAVE_SYSLOG_H=1 -pthread -D_FORTIFY_SOURCE=2 -D_REENTRANT -D_THREAD_SAFE -Wstrict-prototypes -Wno-unused-result -pipe -c -o svc.o svc.c
+svc.c: In function 't_find':
+svc.c:85:5: warning: passing argument 1 of 'lh_retrieve' from incompatible pointer type [enabled by default]
+In file included from /usr/include/openssl/x509_vfy.h:70:0,
+                 from /usr/include/openssl/x509.h:600,
+                 from /usr/include/openssl/ssl.h:156,
+                 from pound.h:136,
+                 from svc.c:28:
+/usr/include/openssl/lhash.h:179:7: note: expected 'struct _LHASH *' but argument is of type 'struct lhash_st_TABNODE * const'
+In file included from svc.c:1437:0:
+dh512.h: At top level:
+dh512.h:4:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+In file included from svc.c:1438:0:
+dh1024.h:4:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+gcc -Wl,-z,relro -pthread -o pound pound.o http.o config.o svc.o -lpcreposix -lssl -lcrypto -lresolv -ldl   -lm 
+gcc -DF_CONF=\"/etc/pound/pound.cfg\" -DVERSION=\""2.6"\" -DC_SSL=\"""\" -DC_T_RSA=\""0"\" -DC_MAXBUF=\""0"\" -DC_OWNER=\"""\" -DC_GROUP=\"""\" -DC_SUPER=\""0"\" -DC_CERT1L=\"""\" -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -pthread -DUPER -DNEED_STACK -DHAVE_SYSLOG_H=1 -pthread -D_FORTIFY_SOURCE=2 -D_REENTRANT -D_THREAD_SAFE -Wstrict-prototypes -Wno-unused-result -pipe   -c -o poundctl.o poundctl.c
+gcc -Wl,-z,relro -pthread -o poundctl poundctl.o -lpcreposix -lssl -lcrypto -lresolv -ldl   -lm 
+make[1]: Leaving directory `/tmp/buildd/pound-2.6'
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+dh_prep
+dh_installdirs
+/usr/bin/make install DESTDIR=/tmp/buildd/pound-2.6/debian/pound
+make[1]: Entering directory `/tmp/buildd/pound-2.6'
+/usr/bin/install -c -d /tmp/buildd/pound-2.6/debian/pound/usr/sbin
+/usr/bin/install -c -o proxy -g proxy -m 555 pound /tmp/buildd/pound-2.6/debian/pound/usr/sbin/pound
+/usr/bin/install -c -o proxy -g proxy -m 555 poundctl /tmp/buildd/pound-2.6/debian/pound/usr/sbin/poundctl
+/usr/bin/install -c -d /tmp/buildd/pound-2.6/debian/pound/usr/share/man/man8
+/usr/bin/install -c -o proxy -g proxy -m 644 pound.8 /tmp/buildd/pound-2.6/debian/pound/usr/share/man/man8/pound.8
+/usr/bin/install -c -o proxy -g proxy -m 644 poundctl.8 /tmp/buildd/pound-2.6/debian/pound/usr/share/man/man8/poundctl.8
+make[1]: Leaving directory `/tmp/buildd/pound-2.6'
+install -m644 -D debian/pound.cfg debian/pound/etc/pound/pound.cfg
+dh_testdir
+dh_testroot
+dh_installchangelogs CHANGELOG 
+dh_installdocs
+dh_installexamples
+dh_installinit
+dh_installman
+dh_link
+dh_strip
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/pound/usr/sbin/poundctl debian/pound/usr/sbin/pound were not linked against libdl.so.2 (they use none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/pound/usr/sbin/poundctl debian/pound/usr/sbin/pound were not linked against libresolv.so.2 (they use none of the library's symbols)
+dh_gencontrol
+dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package `pound' in `../pound_2.6-5~anexia1_amd64.deb'.
+ dpkg-genchanges  >../pound_2.6-5~anexia1_amd64.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source --after-build pound-2.6
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+I: Copying back the cached apt archive contents
+I: unmounting dev/pts filesystem
+I: unmounting proc filesystem
+I: cleaning the build env 
+I: removing directory /var/cache/pbuilder/build//6521 and its subdirectories
+I: Current time: Wed Oct 15 11:44:52 CEST 2014
+I: pbuilder-time-stamp: 1413366292
