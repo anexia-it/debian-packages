@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 15 Oct 2014 07:40:39 +0200
+Source: pound
+Binary: pound
+Architecture: source
+Version: 2.5-2~anexia1
+Distribution: unstable
+Urgency: low
+Maintainer: Martin Meredith <mez@debian.org>
+Changed-By: Stephan Peijnik <spe@anexia.at>
+Description: 
+ pound      - reverse proxy, load balancer and HTTPS front-end for Web servers
+Changes: 
+ pound (2.5-2~anexia1) unstable; urgency=low
+ .
+   * Disabled SSLv2 and SSLv3 entirely.
+Checksums-Sha1: 
+ 4633694ab15265b9114f7c9bb301fbb98bbeb1bd 857 pound_2.5-2~anexia1.dsc
+ eb3ba19c65cd2dd60791a3ff4c0fd501173aa4de 7522 pound_2.5-2~anexia1.debian.tar.gz
+Checksums-Sha256: 
+ bbd6f85089996bf67872f7cec14211fb972eaa02b7f1ccca4e9e997d883a9365 857 pound_2.5-2~anexia1.dsc
+ e5d7091589e464217cce12249f09e1e98286dc55f39a4b089b1f254130f0ca8d 7522 pound_2.5-2~anexia1.debian.tar.gz
+Files: 
+ ace4d02d35987b9f4af06d18169f0cd4 857 net extra pound_2.5-2~anexia1.dsc
+ 6988608d7a58969f60781f4c0356eca1 7522 net extra pound_2.5-2~anexia1.debian.tar.gz
