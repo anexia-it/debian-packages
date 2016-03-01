@@ -1,0 +1,46 @@
+Format: 1.8
+Date: Tue, 01 Mar 2016 16:05:22 +0100
+Source: openssl
+Binary: openssl libssl0.9.8 libcrypto0.9.8-udeb libssl-dev libssl0.9.8-dbg
+Architecture: source amd64
+Version: 0.9.8o-4squeeze24~anexia1
+Distribution: squeeze-lts
+Urgency: high
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Changed-By: Thorsten Lusser <tlusser@anexia-it.com>
+Description: 
+ libcrypto0.9.8-udeb - crypto shared library - udeb (udeb)
+ libssl-dev - SSL development libraries, header files and documentation
+ libssl0.9.8 - SSL shared libraries
+ libssl0.9.8-dbg - Symbol tables for libssl and libcrypto
+ openssl    - Secure Socket Layer (SSL) binary and related cryptographic tools
+Changes: 
+ openssl (0.9.8o-4squeeze24~anexia1) squeeze-lts; urgency=high
+ .
+   * Disable SSLv2.
+   * Fix CVE-2016-0797
+Checksums-Sha1: 
+ 3d94e77abb58a5e01db7c071ba1f0d8dcd6e99da 1152 openssl_0.9.8o-4squeeze24~anexia1.dsc
+ 3feb51f29ae51812fc494da5b8cebe9c9804f8e8 144678 openssl_0.9.8o-4squeeze24~anexia1.debian.tar.gz
+ bf9927ac5dd3427ef2a9ee866eb033a1b8178559 1058962 openssl_0.9.8o-4squeeze24~anexia1_amd64.deb
+ 47e13229bf3c46576032cfc76f1e5cfbb4183032 1005954 libssl0.9.8_0.9.8o-4squeeze24~anexia1_amd64.deb
+ 0a221cf64b4eb9420983ce9f5a514523d0cfb8b9 645468 libcrypto0.9.8-udeb_0.9.8o-4squeeze24~anexia1_amd64.udeb
+ cefcfec016779f8208e684575fa266b86eb34715 2303240 libssl-dev_0.9.8o-4squeeze24~anexia1_amd64.deb
+ 6bac4bfcb31b9dad95a030e0d19f9bd6a3388e5c 1622670 libssl0.9.8-dbg_0.9.8o-4squeeze24~anexia1_amd64.deb
+Checksums-Sha256: 
+ a6f86c55debcf06710a3f2dfd4998f214a13434139fe67d38a859229d78ab484 1152 openssl_0.9.8o-4squeeze24~anexia1.dsc
+ 0c01f390e8950c57dd1bd54596debb060ae8c9982b47184ffe7c4981ef15ca9d 144678 openssl_0.9.8o-4squeeze24~anexia1.debian.tar.gz
+ 2a4eddef54ae5672479a4d830a43476c2b8161fe92f513a46865f5fa900c8125 1058962 openssl_0.9.8o-4squeeze24~anexia1_amd64.deb
+ 3ea32dbe8149ef586e804b00752d58568d278547b472f15402584f7cee38beff 1005954 libssl0.9.8_0.9.8o-4squeeze24~anexia1_amd64.deb
+ 590f4010c5c97152c11b3263dc68a0af07cf5561ca24faf9a1ca42195748c0cc 645468 libcrypto0.9.8-udeb_0.9.8o-4squeeze24~anexia1_amd64.udeb
+ f434a8f4acbd059ffde990276ff052a75a8bbd569702046dcbf889069bd3e239 2303240 libssl-dev_0.9.8o-4squeeze24~anexia1_amd64.deb
+ 1a5958dc5e4d72d7349c8dbaf05884b6986e0719b79dc860982b3e353db70f89 1622670 libssl0.9.8-dbg_0.9.8o-4squeeze24~anexia1_amd64.deb
+Files: 
+ 210559a839d1bae72d671216273fcfde 1152 utils optional openssl_0.9.8o-4squeeze24~anexia1.dsc
+ 217d66a8ae13941814f68e641feb95e0 144678 utils optional openssl_0.9.8o-4squeeze24~anexia1.debian.tar.gz
+ 22d75d14c30bb63d77d09711f501c242 1058962 utils optional openssl_0.9.8o-4squeeze24~anexia1_amd64.deb
+ 09875fc61bbe24c4c1f0376fa4d9bbed 1005954 libs important libssl0.9.8_0.9.8o-4squeeze24~anexia1_amd64.deb
+ d61ac69d19595211d52d55aab205e5c8 645468 debian-installer optional libcrypto0.9.8-udeb_0.9.8o-4squeeze24~anexia1_amd64.udeb
+ e6ed9f2fb0ae45711fe4f54e9692db3a 2303240 libdevel optional libssl-dev_0.9.8o-4squeeze24~anexia1_amd64.deb
+ ad09728e7269e684248a754e1c33d909 1622670 debug extra libssl0.9.8-dbg_0.9.8o-4squeeze24~anexia1_amd64.deb
+Package-Type: udeb

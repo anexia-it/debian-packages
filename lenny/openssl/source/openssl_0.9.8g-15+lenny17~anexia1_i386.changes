@@ -1,0 +1,46 @@
+Format: 1.8
+Date: Tue, 01 Mar 2016 16:05:22 +0100
+Source: openssl
+Binary: openssl libssl0.9.8 libcrypto0.9.8-udeb libssl-dev libssl0.9.8-dbg
+Architecture: source i386
+Version: 0.9.8g-15+lenny17~anexia1
+Distribution: lenny-security
+Urgency: high
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Changed-By: Thorsten Lusser <tlusser@anexia-it.com>
+Description: 
+ libcrypto0.9.8-udeb - crypto shared library - udeb (udeb)
+ libssl-dev - SSL development libraries, header files and documentation
+ libssl0.9.8 - SSL shared libraries
+ libssl0.9.8-dbg - Symbol tables for libssl and libcrypto
+ openssl    - Secure Socket Layer (SSL) binary and related cryptographic tools
+Changes: 
+ openssl (0.9.8g-15+lenny17~anexia1) lenny-security; urgency=high
+ .
+   * Disable SSLv2.
+   * Fix CVE-2016-0797
+Checksums-Sha1: 
+ c619a7d7e4bc8fde3b1956f288d3e7eee6471f7e 1123 openssl_0.9.8g-15+lenny17~anexia1.dsc
+ d6ba712c62f5eb225525938e6aea4e84e69473ce 86651 openssl_0.9.8g-15+lenny17~anexia1.diff.gz
+ 0616283ba043e86ac46389ee7dd764a0b55f854b 1036498 openssl_0.9.8g-15+lenny17~anexia1_i386.deb
+ 1c80cb2db896e3d734a401e4de01619380176e93 2987480 libssl0.9.8_0.9.8g-15+lenny17~anexia1_i386.deb
+ 9b616dac8e0fc96e0fb135ca56603411a4628ca0 591804 libcrypto0.9.8-udeb_0.9.8g-15+lenny17~anexia1_i386.udeb
+ 4e0898f50a8c463ce77898b8b0206fba1f4108a6 2116506 libssl-dev_0.9.8g-15+lenny17~anexia1_i386.deb
+ 17e57ca8c8650187f654cda110bd2500d916f35f 5417090 libssl0.9.8-dbg_0.9.8g-15+lenny17~anexia1_i386.deb
+Checksums-Sha256: 
+ 9cc23aea5091633576128fa99002ab98f509f3d51ae5cb4ec5fa02f4e67896b0 1123 openssl_0.9.8g-15+lenny17~anexia1.dsc
+ e7d7bf1db74d6bbbd6d3bc52c0cfaef0483e37c6c5c15d1b51cf14c413d733e6 86651 openssl_0.9.8g-15+lenny17~anexia1.diff.gz
+ c4e483c2d8581f167baa92a5044b2bf09a5aea223ac056c37e6247e4ef35dcaf 1036498 openssl_0.9.8g-15+lenny17~anexia1_i386.deb
+ 50ef1d7c9259c3b429c4aa6f53fa0728610e6f93b2e971821b34ef8814b35de8 2987480 libssl0.9.8_0.9.8g-15+lenny17~anexia1_i386.deb
+ a92367c4366091209e9fdf50e60784f01259af3ffd562cd79f0c53a3e569075d 591804 libcrypto0.9.8-udeb_0.9.8g-15+lenny17~anexia1_i386.udeb
+ 45388a7fcbcf610a9170067b7bd49c7537a60fefd30eca49c3f6bd0cb4bc2746 2116506 libssl-dev_0.9.8g-15+lenny17~anexia1_i386.deb
+ a04d76b008bcb85ebf52c5075a526a591a54257900b09099dc92fc0689823a9f 5417090 libssl0.9.8-dbg_0.9.8g-15+lenny17~anexia1_i386.deb
+Files: 
+ fcbd0ba4cafe68537de10fef1b62a59e 1123 utils optional openssl_0.9.8g-15+lenny17~anexia1.dsc
+ 3f416cafd3f5c31a68f886cb5400f0c1 86651 utils optional openssl_0.9.8g-15+lenny17~anexia1.diff.gz
+ f55296a7eaf14c05540c3ffc2fa3baca 1036498 utils optional openssl_0.9.8g-15+lenny17~anexia1_i386.deb
+ 46a3093079f2f38fbea93858e3a6877f 2987480 libs important libssl0.9.8_0.9.8g-15+lenny17~anexia1_i386.deb
+ 3fa1e4028fbd2b7d74891a8e6f72a068 591804 debian-installer optional libcrypto0.9.8-udeb_0.9.8g-15+lenny17~anexia1_i386.udeb
+ 44b9f73bca0f6f1be94ab16f18f99de2 2116506 libdevel optional libssl-dev_0.9.8g-15+lenny17~anexia1_i386.deb
+ c5414d98caeef07e85b34a4632a5d430 5417090 libdevel extra libssl0.9.8-dbg_0.9.8g-15+lenny17~anexia1_i386.deb
+Package-Type: udeb
