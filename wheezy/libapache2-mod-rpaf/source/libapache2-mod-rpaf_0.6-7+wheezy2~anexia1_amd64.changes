@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 29 Apr 2016 08:28:44 +0200
+Source: libapache2-mod-rpaf
+Binary: libapache2-mod-rpaf
+Architecture: source amd64
+Version: 0.6-7+wheezy2~anexia1
+Distribution: unstable
+Urgency: medium
+Maintainer: Sergey B Kirpichev <skirpichev@gmail.com>
+Changed-By: Stephan Peijnik <speijnik@anexia-it.com>
+Description: 
+ libapache2-mod-rpaf - module for Apache2 which takes the last IP from the 'X-Forwarded-
+Changes: 
+ libapache2-mod-rpaf (0.6-7+wheezy2~anexia1) unstable; urgency=medium
+ .
+   * Add 031_ip_strncmp.patch, implementing substring matching on IP
+     addresses.
+Checksums-Sha1: 
+ d1b8a6d548261280811185371e07570f8156707e 1685 libapache2-mod-rpaf_0.6-7+wheezy2~anexia1.dsc
+ 7d923fcdc7b20969fe6da3115fa18711c4dc1ee2 6036 libapache2-mod-rpaf_0.6-7+wheezy2~anexia1.debian.tar.gz
+ 87456ab3812629bc25bac0729cb1cd1433bd7375 10482 libapache2-mod-rpaf_0.6-7+wheezy2~anexia1_amd64.deb
+Checksums-Sha256: 
+ 810f6f157c2af2fd38966236079318006940fad4378cce812717ecaf26f7d7c7 1685 libapache2-mod-rpaf_0.6-7+wheezy2~anexia1.dsc
+ 765ba6fb9cbf1d6136c8bf0f7b68ccc335824d900ee37192530e18ff749608f6 6036 libapache2-mod-rpaf_0.6-7+wheezy2~anexia1.debian.tar.gz
+ d43834905aa69ee7532e6249a9d27fb9062f2dc51d99e06e2284fd3e94485e83 10482 libapache2-mod-rpaf_0.6-7+wheezy2~anexia1_amd64.deb
+Files: 
+ f886120f9c552f50823e40b9aa82c9c0 1685 httpd extra libapache2-mod-rpaf_0.6-7+wheezy2~anexia1.dsc
+ 49ee49bfd99a47d3f15a4a6ad40c8b20 6036 httpd extra libapache2-mod-rpaf_0.6-7+wheezy2~anexia1.debian.tar.gz
+ 1380fe80c414b674571d4ed8d977f9b7 10482 httpd extra libapache2-mod-rpaf_0.6-7+wheezy2~anexia1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXIwMGAAoJEIFeFWFN+18WCB8H/Aty0lAxnVxIJyUuJGzB7dJl
+J/4zeYs7ZjQ3t1pC/X3Q0+gB4Ypguo+Rl+AzehsHAztXghnQsFGp/8PGKusbISJE
+HPwCN5Uoxs9nEbW6X5QbuQxnrfhFvfGOMzS+7AsMfa5kcHenh+O+gn7eTJXE8Ozb
+GD6mcNSYt6n95aq2MX3uGemTQ2AixdRvM3WKRruZhtNqBG/ftM596mdBND7jIK/g
+yk4NDDWI5wfGK9wSHzrz2yj0qQgIkk+u2n/gpIkGq6w19FQgmjo7jdYYHiaNj1Y0
+6gAEtjgvX951HD6cNgooViYp2kGsZiUVRjNnItgjSqe/Ns31oDmrzE85p/ctl+M=
+=WBRx
+-----END PGP SIGNATURE-----
