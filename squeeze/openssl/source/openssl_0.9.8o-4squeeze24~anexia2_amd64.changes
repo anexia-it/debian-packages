@@ -1,0 +1,66 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 04 May 2016 15:01:47 +0200
+Source: openssl
+Binary: openssl libssl0.9.8 libcrypto0.9.8-udeb libssl-dev libssl0.9.8-dbg
+Architecture: source amd64
+Version: 0.9.8o-4squeeze24~anexia2
+Distribution: squeeze-tls
+Urgency: high
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Changed-By: Stephan Peijnik <speijnik@anexia-it.com>
+Description: 
+ libcrypto0.9.8-udeb - crypto shared library - udeb (udeb)
+ libssl-dev - SSL development libraries, header files and documentation
+ libssl0.9.8 - SSL shared libraries
+ libssl0.9.8-dbg - Symbol tables for libssl and libcrypto
+ openssl    - Secure Socket Layer (SSL) binary and related cryptographic tools
+Changes: 
+ openssl (0.9.8o-4squeeze24~anexia2) squeeze-tls; urgency=high
+ .
+   * Fix CVE-2016-2108 (wheezy backport)
+   * Fix CVE-2016-2105 (wheezy backport)
+   * Fix CVE-2016-2176 (wheezy backport)
+   * Fix CVE-2016-2106 (wheezy backport)
+   * Fix CVE-2016-2109 (wheezy backport)
+   * The CVE-2016-2107 fix has not been backported, as the relevant code
+     is missing from OpenSSL 0.9.8o.
+Checksums-Sha1: 
+ 8e1c8bc52fbc6889e45db044cd5c3e0178cab3b8 1673 openssl_0.9.8o-4squeeze24~anexia2.dsc
+ fd06241fc427fc2ec016247e74d017c5361243a3 148422 openssl_0.9.8o-4squeeze24~anexia2.debian.tar.gz
+ 77281722c810950e96c38fb72bca1417e2d0716f 1059028 openssl_0.9.8o-4squeeze24~anexia2_amd64.deb
+ a0a5de9aa8f7bcf6b100ab4fb207d8ce0a9008d9 1005338 libssl0.9.8_0.9.8o-4squeeze24~anexia2_amd64.deb
+ 083d9b1cd3fbc22d49b9558dd514989fdc165296 645660 libcrypto0.9.8-udeb_0.9.8o-4squeeze24~anexia2_amd64.udeb
+ 6c758a99c6ae5916cf556cb76f14907525afa6ce 2306724 libssl-dev_0.9.8o-4squeeze24~anexia2_amd64.deb
+ d6c67a632f476469eb3733c3651b6e9504296586 1620046 libssl0.9.8-dbg_0.9.8o-4squeeze24~anexia2_amd64.deb
+Checksums-Sha256: 
+ 5519112b0192fb6949f296c5fee4d2662eb6577c815377ff52db13ef70ae4e49 1673 openssl_0.9.8o-4squeeze24~anexia2.dsc
+ 40e297bd76a160f09a5338628b58e65d16a37a9162226ce47922f09299424abe 148422 openssl_0.9.8o-4squeeze24~anexia2.debian.tar.gz
+ 3b2b233af3c36e4e6f0a72382b8a4f2b3d0788d03086220e151bf92103058011 1059028 openssl_0.9.8o-4squeeze24~anexia2_amd64.deb
+ c8f7c0d54db33b479bf3e7792360bd298f84049af5c41345e21f115d2ed947f8 1005338 libssl0.9.8_0.9.8o-4squeeze24~anexia2_amd64.deb
+ ee6129665f5887d39404cdfacf09f80421f846470ae5b145a8afa6154ff87eca 645660 libcrypto0.9.8-udeb_0.9.8o-4squeeze24~anexia2_amd64.udeb
+ b5c90d899148dcb9e73e80b8a1f8d1149f28e18df6200556ad464f74f9ef0c42 2306724 libssl-dev_0.9.8o-4squeeze24~anexia2_amd64.deb
+ d0f61d7db791374e281295739ecd77a1506208ef4b9707e32f9ba51cadd3a59d 1620046 libssl0.9.8-dbg_0.9.8o-4squeeze24~anexia2_amd64.deb
+Files: 
+ 8c50417ee94c4bafc34519fb4428b755 1673 utils optional openssl_0.9.8o-4squeeze24~anexia2.dsc
+ 7112882e96fa58138e064a54601198ee 148422 utils optional openssl_0.9.8o-4squeeze24~anexia2.debian.tar.gz
+ e4c922d04f55d876137e126c8768f5a8 1059028 utils optional openssl_0.9.8o-4squeeze24~anexia2_amd64.deb
+ bbfc596b619119d43f2393a9c48486f8 1005338 libs important libssl0.9.8_0.9.8o-4squeeze24~anexia2_amd64.deb
+ 818a9d0e63388cab626a065a1e0a2e7f 645660 debian-installer optional libcrypto0.9.8-udeb_0.9.8o-4squeeze24~anexia2_amd64.udeb
+ fabd3f2460a16a8ecde2531abc7ed12e 2306724 libdevel optional libssl-dev_0.9.8o-4squeeze24~anexia2_amd64.deb
+ f033d37e393b91bdfc1eb4019ba81a33 1620046 debug extra libssl0.9.8-dbg_0.9.8o-4squeeze24~anexia2_amd64.deb
+Package-Type: udeb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXKfd6AAoJEIFeFWFN+18W46wH/ixO5mFe9hhSLWHhIIvVRPeD
+hAFCKQZz5m8zPoW/CAuzOjvooAsv0fqZcLYS6KUU0pCPg/o03StyklPMUHsSayfl
+9rLFUTeYJ7grEfKvBQCFKiMX5x8A4n8urGBPuQximQtHoA6tqToZjuTGlXXOce+7
+UfOID86oor/gDNyePt9qc+KUC8Q6kmN4UQRGXLTX9iyIt0PyH0PdhobJVcq/V4aU
+qAP1uVeqyh5ZjS2TocpCP1CBbfBW/AJLVk9Ukj3tkGKOrIFwDnH1gM9mgNB5+4QS
+lxVg452Nf73x/h10aUkZ0oPXZXzv/ONk2dNcDl05V5ozfz4TI8yRhX8hsao73zA=
+=TPxX
+-----END PGP SIGNATURE-----
